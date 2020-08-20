@@ -15,4 +15,4 @@ if [ ! -z "${SOJU_TRUST_ADD}" ]; then
     update-ca-certificates
 fi
 
-"${WORKDIR}/soju -listen irc+insecure://0.0.0.0:6667"
+"${WORKDIR}/soju -listen" irc+insecure://0.0.0.0:6667
