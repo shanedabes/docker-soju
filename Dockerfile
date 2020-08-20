@@ -7,7 +7,7 @@ RUN go build -o /app/dbgen dbgen.go
 RUN cp /src/entrypoint.sh /app
 RUN git clone https://github.com/emersion/soju.git \
  && cd soju \
- && git checkout 21942591240f66936b1e98d63749e6800125d6f0 \
+ && git checkout 81c7e80e0fa47619d80dc941104dfe7da73ca58c \
  && go build -o /app/soju cmd/soju/main.go
 
 FROM alpine

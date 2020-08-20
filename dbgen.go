@@ -99,7 +99,7 @@ func main() {
 			Username: u.name,
 			Password: string(hashed),
 		}
-		if err := db.CreateUser(&user); err != nil {
+		if err := db.StoreUser(&user); err != nil {
 			log.Fatalf("failed to create user: %v", err)
 		}
 
