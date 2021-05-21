@@ -111,7 +111,7 @@ func main() {
 				Pass: n.password,
 			}
 
-			if err := db.StoreNetwork(u.name, network); err != nil {
+			if err := db.StoreNetwork(user.ID, network); err != nil {
 				log.Fatalf("failed to create network: %v", err)
 			}
 
